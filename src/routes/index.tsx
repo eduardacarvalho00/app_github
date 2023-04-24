@@ -1,7 +1,7 @@
-import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { View } from "react-native";
 import { Home } from "../screens/Home";
+import Repos from "../screens/Repos";
+import { SearchUsers } from "../screens/SearchUsers";
 export function Routes() {
   const Stack = createStackNavigator();
   return (
@@ -11,6 +11,8 @@ export function Routes() {
         component={Home}
         options={{ headerShown: false }}
       />
+      {/* <Stack.Screen name="SearchUsers" component={SearchUsers} />
+      <Stack.Screen name="Repos" component={Repos} /> */}
     </Stack.Navigator>
   );
 }
